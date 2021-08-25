@@ -5,27 +5,40 @@
         float: right;
     }
 .center {
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
+    position: absolute;
+  top: 30%;
+  left: 40%;
+  text-align: justify;
 }
-    /* .image  {
-    text-align: center;
-} */
-    footer {
-        position: fixed;
-        bottom: 0;
-    }
+.search {
 
-    .footer {
-        display: inline;
-    }
-/* 
-    .rightfooter {
-        position: fixed;
-        right: 100px;
+    padding: 10px;
+}
+input {
+    width: 350px;
+}
+
+    /* footer {
+        position: absolute;
+        bottom: 0;
     } */
+
+#botNav {
+   bottom: 0;
+    width: 100%;
+    height: 55px;
+    position: absolute;
+}
+
+.rightside {
+    float: right;
+    margin-right:30px;
+}
+
+#botNav a{
+    margin: 20px 10px;
+
+  }
 </style>
 <html>
 
@@ -46,26 +59,26 @@
         <div class="image"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                 alt="Google logo">
         </div>
-        <div><input type="search"></div>
+        <div class="search"><input type="search" placeholder="Search here"></div>
         <div><button>Google Search</button>
             <button>I'm Feeling Lucky</button>
         </div>
     </div>
 
     <footer>
-        <div class="footer">
-            <ul>
-                <div class="leftfooter">
+<ul id="botNav">
+                <div class="leftside">
                     <a href="#">About</a>
                     <a href="#">Advertising</a>
                     <a href="#">Business</a>
                     <a href="#">How Search works</a>
+                </div>
+                <div class="rightside">
                     <a href="#">Privacy</a>
                     <a href="#">Terms</a>
                     <a href="#">Settings</a>
                 </div>
             </ul>
-        </div>
     </footer>
 </body>
 
